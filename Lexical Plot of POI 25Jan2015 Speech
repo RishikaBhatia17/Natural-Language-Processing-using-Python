@@ -1,0 +1,8 @@
+import nltk
+#nltk.download()
+from nltk.corpus import PlaintextCorpusReader
+f=open('/Users/BU105TX/Desktop/NLP Assignment 2/Speech1/2015January25 POI Speech.txt', 'rU')
+raw = f.read()
+tokens = nltk.word_tokenize(raw)
+mytext = nltk.Text(tokens)
+mytext.dispersion_plot(["citizens", "education", "Indian", "India", "population", "democracy", "challenge", "freedom", "Independence", "nation", "strength"])
